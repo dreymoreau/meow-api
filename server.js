@@ -17,7 +17,7 @@ const cats = {
         'img': './cat-img/siamese.jpg'
     },
     'norwegian forest': {
-        'breed': 'Norweigan Forest Cat',
+        'breed': 'Norwegian Forest',
         'lifespan': '12 years - 16 years',
         'img': './cat-img/norwegian-forest-cat.jpg'
     },
@@ -59,6 +59,6 @@ app.get('/api/:cat', (request,response) => {
     }
 })
 
-app.listen(PORT, () => {
+app.listen(process.env.PORT || PORT, () => {
     console.log(`Server running on port ${PORT}`)
 })
