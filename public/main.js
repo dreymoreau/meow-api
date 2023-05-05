@@ -3,7 +3,7 @@ document.querySelector('#cat-output').addEventListener('click', catPiRequest)
 async function catPiRequest(){
     const catName = document.querySelector('input').value
     try{
-        const response = await fetch(`http://localhost:3001/api/${catName}`)
+        const response = await fetch(`https://meow-api.up.railway.app/api/${catName}`)
         const data = await response.json()
 
         console.log(data)
