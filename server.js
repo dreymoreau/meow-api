@@ -37,7 +37,7 @@ const cats = {
         'breed': 'unknown',
         'lifespan': 'unknown',
         'img': './cat-img/unknown-photo.jpg'
-    }
+    } 
 }
 
 app.get('/', (request,response) => {
