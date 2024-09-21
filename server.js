@@ -53,7 +53,6 @@ app.get('/api', (request,response) => {
 })
 app.get('/api/:cat', (request,response) => {
     const catProfile = request.params.cat.toLowerCase()
-    // console.log(cats[catProfile])
     if(cats[catProfile]){
         response.json(cats[catProfile])
     } else {
@@ -61,6 +60,6 @@ app.get('/api/:cat', (request,response) => {
     }
 })
 
-app.listen(process.env.PORT || PORT, () => {
+app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`)
 })
