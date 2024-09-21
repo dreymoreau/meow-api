@@ -1,4 +1,4 @@
-# Meow API:  <a target="_blank" href="(https://meow-api-i9z4.onrender.com/)">See It Here</a>
+# Meow API:  <a target="_blank" href="https://meow-api-i9z4.onrender.com/">See It Here</a>
 
 # Lessons Learned: 
 - how to build a server side api using Node and Express
