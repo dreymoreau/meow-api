@@ -3,7 +3,7 @@ document.querySelector('#cat-output').addEventListener('click', catPiRequest)
 async function catPiRequest(){
     const catName = document.querySelector('input').value
     try{
-        const response = await fetch(`https://meow-api-i9z4.onrender.com/${catName}`)
+        const response = await fetch(`https://meow-api-i9z4.onrender.com/api/${catName}`)
         const data = await response.json()
 
         console.log(data)
